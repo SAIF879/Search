@@ -1,5 +1,6 @@
 package com.example.search.ui.screen.home.composables
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.statusBarsPadding
@@ -39,6 +40,10 @@ fun SearchItems() {
         ),
         colors = CardDefaults.cardColors(
             containerColor = Color(0xFF1E1E1E) // dark gray
+        ),
+        border = BorderStroke(
+            width = 1.0.dp,
+            color = Color(0xFFFF7A18)
         )
     ) {
         TextField(

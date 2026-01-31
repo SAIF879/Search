@@ -50,7 +50,7 @@ fun ItemCard() {
             .padding(horizontal = 12.dp, vertical = 6.dp),
         shape = RoundedCornerShape(16.dp),
         elevation = CardDefaults.cardElevation(defaultElevation = 6.dp),
-        border = BorderStroke(1.dp, Color(0xFF3A3A3A)),
+        border = BorderStroke(1.dp, Color(0xFFFF7A18)),
         colors = CardDefaults.cardColors(
             containerColor = Color(0xFF1E1E1E)
         )
