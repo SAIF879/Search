@@ -1,10 +1,10 @@
-package com.example.search.data
+package com.example.search.data.dto
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Recipes(
+data class RecipesDto(
 
     @SerialName("id") var id: Int? = null,
     @SerialName("name") var name: String? = null,
