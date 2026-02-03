@@ -5,6 +5,7 @@ plugins {
   //  alias(libs.plugins.kotlin.serialization)
     // Kotlin Serialization Plugin - required for @Serializable annotations
     id("org.jetbrains.kotlin.plugin.serialization")
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -83,5 +84,21 @@ dependencies {
 
     // Material Icons Extended
     implementation("androidx.compose.material:material-icons-extended:1.6.0")
+
+    // Room
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+
+    // Room compiler (KSP)
+    ksp("androidx.room:room-compiler:2.6.1")
+
+    // Paging runtime (for Flow / LiveData)
+    implementation("androidx.paging:paging-runtime:3.2.0")
+
+    // Paging Compose integration
+    implementation("androidx.paging:paging-compose:3.2.0")
+
+    // Optional: Paging + Room
+    implementation("androidx.room:room-paging:2.6.1")
 
 }
